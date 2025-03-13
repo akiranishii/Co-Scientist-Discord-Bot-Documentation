@@ -1,3 +1,8 @@
+# Demo Video
+
+[Watch the Demo Video on Loom](https://www.loom.com/share/566403785fef4f2785e300bfc5880bd2?sid=18391ec7-1bde-4dde-aa1e-dbb754a466a1)
+
+
 ## 1. Getting Started
 
 - **Invite the Bot**: Add TheraLab to your Discord server with appropriate permissions (particularly “Manage Guild” for slash commands).  
