@@ -292,9 +292,9 @@ Below are high-complexity prompts ideally suited for multi-agent brainstorming:
    Research Question:
    How can CRISPR-based interventions be optimized to precisely correct disease-causing mutations in genes like CFTR or DMD, while minimizing off-target edits, ensuring robust delivery mechanisms, and handling ethical concerns of germline vs. somatic applications?
    ```
-   - **Try** `/quickstart topic:"CRISPR gene editing" rounds:2`  
+   - **Try** `/quickstart topic:"ABOVE PROMPT" rounds:2`  
    or  
-   - **Try** `/lab team_meeting agenda:"Advanced CRISPR" auto_generate:true auto_scientist_count:3`
+   - **Try** `/lab team_meeting agenda:"ABOVE PROMPT" auto_generate:true auto_scientist_count:3`
 
 2. **Economics/Philosophy (Universal Basic Income)**  
    ```
