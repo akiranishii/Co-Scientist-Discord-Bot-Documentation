@@ -1,4 +1,4 @@
-Below is a concise but comprehensive guide to using the TheraLab Discord bot. The guide covers how to create and manage AI-powered research sessions (“Lab Sessions”), add Agents with different roles, run multi-agent discussions (“Team Meetings”), and retrieve transcripts. Use the examples as a starting point and adapt parameters to fit your needs.
+This guide covers how to create and manage AI-powered research sessions (“Lab Sessions”), add Agents with different roles, run multi-agent discussions (“Team Meetings”), and retrieve transcripts. Use the examples as a starting point and adapt parameters to fit your needs.
 
 ---
 
