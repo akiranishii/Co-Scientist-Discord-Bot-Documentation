@@ -197,42 +197,80 @@ Agents are AI participants (Principal Investigators, Scientists, Critics, or Too
 
 ## 5. Usage Flow Examples
 
-### 5.1 Manual Steps
-1. **Start a session**:  
-   ```
-   /lab start title:"CRISPR Gene Editing" description:"Research on advanced CRISPR techniques"
-   ```
-   - Creates a new container for your CRISPR research.
 
-2. **Create agents**:  
-   ```
-   /lab agent_create agent_name:"PI" role:"Principal Investigator"
-   /lab agent_create agent_name:"Scientist1" expertise:"Molecular Biology"
-   /lab agent_create agent_name:"Scientist2" expertise:"Bioethics"
-   /lab agent_create agent_name:"Critic" role:"Critic"
-   ```
+### 5.1 Manual Lab + Full Agent Creation
 
-3. **Begin meeting**:  
-   ```
-   /lab team_meeting agenda:"How to minimize off-target CRISPR edits?" rounds:3
-   ```
-   - Discussion starts among all created agents.
-
-4. **End meeting**:
-   ```
-   /lab end_team_meeting
-   ```
-
-5. **Review transcripts**:  
-   ```
-   /lab transcript_list
-   /lab transcript_view meeting_id:"XYZ123"
-   ```
-
-6. **End session** (still reopenable later):
-   ```
-   /lab end
-   ```
+1. **Start a new lab session**:
+    
+    ```
+    /lab start title:"CRISPR Gene Editing Session" 
+               description:"Deep dive into off-target effects" 
+               is_public:false
+    ```
+    
+2. **Create a Principal Investigator** (all parameters):
+    
+    ```
+    /lab agent_create agent_name:"Dr. Fiona Grant" 
+                      expertise:"Interdisciplinary CRISPR applications" 
+                      goal:"Coordinate research directions and integrate findings" 
+                      role:"Principal Investigator" 
+                      model:"openai"
+    ```
+    
+3. **Create 2 Scientists** (all parameters):
+    
+    ```
+    /lab agent_create agent_name:"Dr. Marcus Tan" 
+                      expertise:"Molecular biology of gene editing" 
+                      goal:"Investigate off-target CRISPR effects and propose mitigations"
+                      role:"Scientist"
+                      model:"anthropic"
+    ```
+    
+    ```
+    /lab agent_create agent_name:"Dr. Sandra Lopez"
+                      expertise:"Bioinformatics & data analysis"
+                      goal:"Analyze large genomic datasets for CRISPR mutational profiles"
+                      role:"Scientist"
+                      model:"openai"
+    ```
+    
+4. **Create a Critic** (all parameters):
+    
+    ```
+    /lab agent_create agent_name:"Dr. Halima Mensah"
+                      expertise:"Ethical review and risk assessment"
+                      goal:"Challenge assumptions and highlight ethical/regulatory pitfalls"
+                      role:"Critic"
+                      model:"mistral"
+    ```
+    
+5. **Begin a team meeting**:
+    
+    ```
+    /lab team_meeting agenda:"Optimizing CRISPR to reduce off-target mutations" 
+                      rounds:3
+    ```
+    
+6. **End the meeting**:
+    
+    ```
+    /lab end_team_meeting
+    ```
+    
+7. **Review transcripts**:
+    
+    ```
+    /lab transcript_list
+    /lab transcript_view meeting_id:"XYZ123"
+    ```
+    
+8. **End the session** (still reopenable in future):
+    
+    ```
+    /lab end
+    
 
 ### 5.2 Quickstart in One Shot
 ```
