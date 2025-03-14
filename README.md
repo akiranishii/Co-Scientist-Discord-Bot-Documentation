@@ -18,14 +18,10 @@
 
 ```
 /quickstart topic:"Your topic" 
-             [agent_count:3] 
-             [include_critic:true] 
-             [public:false] 
-             [live_mode:true] 
              [rounds:3] 
-             [speakers_per_round:null]
+             [speakers_per_round:3]
 ```
-
+Other parameters you can include are: 
 - **topic** (required): Main subject/question to discuss.
 - **agent_count**: Number of Scientist agents (default `3`).
 - **include_critic**: Add a Critic agent (default `true`).
