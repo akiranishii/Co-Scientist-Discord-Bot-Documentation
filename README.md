@@ -17,7 +17,7 @@
 **`/quickstart`** is the fastest way to spin up everything you need—**creating a lab session, auto-generating agents, and kicking off a discussion** in one go.
 
 ```
-/quickstart topic:"Your topic" 
+/quickstart topic:"Your research question (e.g. What are possible roles of SCD1 in cancer biology?") 
              [rounds:3] 
              [speakers_per_round:3]
 ```
